@@ -1,0 +1,17 @@
+{
+    "name": "octcms-plugin/console",
+    "type": "october-plugin",
+    "homepage": "http://www.octcms.cn/",
+    "keywords": ["october", "octcms", "october-plugin", "october-console"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "yikui shi",
+            "email": "shiyikui@foxmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0"
+    },
+    "minimum-stability": "dev"
+}

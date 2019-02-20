@@ -1,2 +1,2 @@
 # console
-OctCMS Console
+OctCMS命令行
