@@ -34,8 +34,6 @@ class Uninstall extends BaseInstaller
 
         $this->output->writeln('<info>OctCMS开始卸载... </info>');
 
-//        $this->call('october:down', ['--force' => true]); //卸载Ootober CMS数据库
-
         $pluginManager = PluginManager::instance();
         // 删除插件
         foreach (parent::$pluginsUninstall as $plugin){
@@ -43,7 +41,7 @@ class Uninstall extends BaseInstaller
             if ($pluginManager->hasPlugin($pluginName)) {
                 if ($pluginPath = $pluginManager->getPluginPath($pluginName)) {
                     $this->call('plugin:remove', ['name' => $plugin, '--force' => true]);
-                    File::deleteDirectory($pluginPath);
+//                    File::deleteDirectory($pluginPath);
                     $this->output->writeln(sprintf('<info>Deleted: %s</info>', $pluginName));
                 }
             }

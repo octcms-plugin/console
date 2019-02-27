@@ -2,7 +2,7 @@
     "name": "octcms-plugin/console",
     "type": "october-plugin",
     "homepage": "http://www.octcms.cn/",
-    "keywords": ["october", "octcms", "october-plugin", "october-console"],
+    "keywords": ["october", "octcms", "october-plugin", "october console"],
     "license": "MIT",
     "authors": [
         {

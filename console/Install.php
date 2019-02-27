@@ -1,5 +1,6 @@
 <?php namespace Octcms\Console\Console;
 
+use Cms\Classes\ThemeManager;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
@@ -40,8 +41,11 @@ class Install extends BaseInstaller
             }
         }
 
+        //安装默认主题
+//        $themeManager = ThemeManager::instance();
+//        $themeManager->setInstalled('octcms-blog');
 //        if(DB::table('system_parameters')->where([['namespace','=','cms'],['group','=','theme']])->count() == 0) {
-//            $this->call('theme:use', ['name' => 'octcms']); //设置默认主题
+//            $this->call('theme:use', ['name' => 'octcms-blog']); //设置默认主题
 //        }
 
         $this->output->writeln('<info>OctCMS安装完成!</info>');
